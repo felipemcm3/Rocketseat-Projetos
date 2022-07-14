@@ -1,12 +1,12 @@
 body {
   font-family: "Open Sans", sans-serif;
-  text-align: end;
+  text-align: center;
   margin: 0;
 }
 
 #hero {
     width: 592px;
-    margin: 72px;
+    margin: 10px auto;
 }
 
 img {
@@ -30,10 +30,11 @@ span, a {
   color: #ff9900;
 }
 
-p, #footer {
+#footer {
   color: #7d7987;
   font-size: 14px;
   line-height: 28px;
+  margin: auto;
 }
 
 #footer a + a {
@@ -44,13 +45,17 @@ p, #footer {
     width: 568px;
     height: 0;
 
-    margin: 0 8px;
+    margin: auto;
 
     border: 1px solid #ECEFF2;
 }
 
 #balls {
     position: fixed;
-    top: 0;
-    right: 0;
+    bottom: 0px;
+    right: 0px;
+}
+
+#foto{
+  margin-top: 5px;
 }

@@ -21,8 +21,9 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
-  
+    margin-top: 100px;
     margin-bottom: 15px;
+    margin-left: 200px;
   }
   
   ul {
@@ -36,6 +37,7 @@ body {
     color: #1f1534;
     text-decoration: none;
   }
+
   
   ul li a {
     opacity: 0.5;
@@ -51,7 +53,10 @@ body {
     font-family: "Mulish", sans-serif;
   }
   
-  
+  ul li + li{
+    margin-left: 50px;
+  }
+
   h1 {
     font-size: 49px;
     line-height: 56px;
@@ -124,6 +129,7 @@ body {
   
   #logo{
     display: inline;
+    margin-right: 600px;
   }
 
  .direita{

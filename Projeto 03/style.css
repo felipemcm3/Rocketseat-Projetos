@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, button, select, textarea{
+    font-family: 'Poppins', 'sans-serif';
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background: #E5E5E5;
@@ -51,6 +61,12 @@ fieldset{
     border: none;
 }
 
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 fieldset legend{
     font-family: 'Archivo';
     font-weight: 600px;
@@ -64,6 +80,25 @@ fieldset legend{
 .input-wrapper{
     display: flex;
     flex-direction: column;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 16px;
+}
+
+.input-wrapper input, .input-wrapper textarea{
+    background: #FAFAFC;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #46424c;
+}
+
+.input-wrapper textarea{
+    padding: 0;
+    height: 168px;
 }
 
 .input-wrapper label{
@@ -77,5 +112,5 @@ fieldset legend{
     margin-left: 12px;
     font-size: 12px;
     line-height: 20px;
-    color: #C1BCCC;
+    color: #46424c;
 }

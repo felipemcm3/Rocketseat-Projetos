@@ -10,11 +10,32 @@ body::before{
     background: #535971;
 }
 
-header{
+header div{
     font-size: 20px;
-    text-align: center;
 }
 
-header h1{
+#titulo{
+    text-align: left;
+    background: wheat;
+    width: 400px;
+    margin-left: 345px;
+    margin-top: 138px;
+}
+
+#titulo h1{
+    font-family: 'Staatliches', cursive;
+    font-weight: 200;
     font-size: 48px;
+}
+
+#titulo p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.formulario{
+    width: 750px;
+    min-height: 300px;
+    background: white;
+    text-align: center;
 }

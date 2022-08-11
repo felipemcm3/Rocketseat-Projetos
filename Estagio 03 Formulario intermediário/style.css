@@ -39,21 +39,47 @@ header div{
     width: 750px;
     min-height: 300px;
     background: white;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     margin-left: 230px;
     border-radius: 20px;
     color: #535971;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 20px;
+    font-size: 24px;
+    padding: 100px;
 
 }
 
 .formulario h1{
     font-family: 'Staatliches', cursive;
+    font-size: 34px;
+}
+
+hr{
+    margin-bottom: 50px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input{
+    border-radius: 8px;
+    height: 56px;
+    border: 1px solid #EFEFEF;
     font-size: 24px;
-    line-height: 34px;
+    
+}
+
+.aolado{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.formulario div{
+    display: flex;
+    flex-direction: column;
 }
 

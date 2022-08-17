@@ -1,0 +1,23 @@
+.coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 20px  ;
+    background: green;
+    height: 600px;
+    align-items: center;
+}
+
+.linha{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: gray;
+    height: 200px;
+    width: 600px;
+}
+
+.peq{
+    background: red;
+    width: 100px;
+    height: 100px;
+}

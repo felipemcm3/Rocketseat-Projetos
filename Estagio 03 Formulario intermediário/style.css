@@ -49,7 +49,7 @@ header div{
     padding: 100px;
 }
 
-.formulario > div{
+.formulario{
     display: flex;
     flex-direction: column;
 }
@@ -75,7 +75,6 @@ hr{
 .aolado{
     display: flex;
     gap: 20px;
-    width: 100%;
 }
 
 .formulario div{

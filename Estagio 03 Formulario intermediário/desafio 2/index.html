@@ -19,7 +19,7 @@
             <h2>INFORMAÇÕES PESSOAIS</h2>
         </div>
     </header>
-    <fieldset>
+    <fieldset id="perguntas">
         <form>
             <div class="aolado">
                 <div>
@@ -38,7 +38,41 @@
         </form>
         <form>
             <h2>INFORMAÇÕES DO MENTOR</h2>
+            <hr>
+            <div>
+                <label for="mentor">Selecione quem foi seu mentor</label>
+                <input type="text" id="mentor">
+            </div>
+            <div>
+                <label for="feedback">Feedback sobre o mentor</label>
+                <textarea id="" cols="30" rows="10"></textarea>
+            </div>
+            <div id="check">
+                <input type="checkbox" id="s/duvida">
+                <label for="s/duvida">Todas as minhas dúvidas foram esclarecidas durante a mentoria</label>
+            </div>
         </form>
+        <form>
+            <h2>AGENDANDO PRÓXIMA MENTORIA</h2>
+            <hr>
+            <div class="aolado">
+                <div>
+                    <label for="data">Data<span>(DD/MM/AAAA)</span></label>
+                    <input type="date" id="data">
+                </div>
+                <div>
+                    <label for="tempoinicio">Das</label>
+                    <input type="time" id="tempoinicio">
+                </div>
+                <div>
+                    <label for="tempofinal">Até</label>
+                    <input type="time" id="tempofinal">
+                </div>
+            </div>
+        </form>
+        <footer>
+            <input type="submit" value="SALVAR" form="perguntas">
+        </footer>
     </fieldset>
     
 </body>

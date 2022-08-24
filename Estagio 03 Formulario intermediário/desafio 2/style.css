@@ -80,14 +80,53 @@ form div{
     gap: 10px;
 }
 
+form h2{
+    text-align: center;
+}
+
+hr{
+    border-color: #E6E6F0;
+    margin-bottom: 30px;
+}
+
 .aolado{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.aolado input{
+#mentor{
     width: 300px;
+}
+
+#check{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    align-items: center;
+}
+
+#check input{
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    
+    border-radius: 8px;
+    background: #F67669;
+}
+
+footer input{
+    width: 622px;
+    height: 51px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
 }
 
 

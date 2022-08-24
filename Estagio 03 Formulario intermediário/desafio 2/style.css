@@ -9,7 +9,85 @@ body::before{
     left: 0px;
 }
 
-header{
-    align-items: center;
-    justify-content: center;
+body{
+    background: #BFD7E4;
+    font-family: 'Poppins', sans-serif;
 }
+
+body h1, h2{
+    font-family: 'Staatliches', cursive;
+}
+
+header{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 152px;
+    color: #FFFFFF;
+
+}
+
+header h1{
+    font-size: 36px;
+}
+header h2{
+    font-size: 24px;
+}
+
+header div{
+    box-sizing: border-box;
+    width: 750px;
+    height: 133px;
+    margin-top: 465;
+    background: #F67669;
+    margin-left: 230px;
+    margin-top: 87px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+fieldset{
+    box-sizing: border-box;
+    width: 750px;
+    margin-left: 230px;
+    min-height: 300px;
+    border: none;
+    background: #FFFFFF;
+    font-size: 14px;
+    padding: 50px;
+    color: #4E4958;
+    font-weight: bold;
+}
+
+label span{
+    color: #C1BCCC;
+}
+
+form input{
+    width: 100%;
+    height: 55px;
+    font-size: 22px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aolado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.aolado input{
+    width: 300px;
+}
+
+

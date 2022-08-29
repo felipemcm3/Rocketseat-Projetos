@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ECE9FD;
+    font-family: 'Epilogue', sans-serif;
+    padding: 6.0rem 2.3rem 6.6rem;
+}
+
+:root{
+    font-size: 62,5%;
+}
+
+h1{
+    
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+    color: #090039;
+
+    margin-bottom: 1.5rem;
+}
+
+main p:first-child{
+    color: #7158EF;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    margin-bottom: 1.7rem;
+}
+
+h1 + p {
+    color: rgba(10, 0, 57, 0.64);
+    line-height: 3.2rem;
+
+    margin-bottom: 3.2rem;
+}
+
+a{
+    color: #090039;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+ul{
+    
+}

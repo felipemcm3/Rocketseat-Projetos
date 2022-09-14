@@ -54,6 +54,10 @@ header{
     font-family: var(--ff-heading);
 
     text-align: center;
+
+    animation-name: topdown;
+    animation-duration: 700ms;
+    
 }
 
 header p{
@@ -130,5 +134,11 @@ header h1{
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes downtop{
+    100%{
+        
     }
 }

@@ -29,14 +29,25 @@ body{
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    display: grid;
+    gap: 3.2rem;
+    padding-bottom: 10rem;
+    animation: downtop 700ms 350ms backwards;
 }
 
 .page{
     max-width: 33rem ;
     margin: 0 auto;
+}
+
+@media(min-width: 700px){
+    :root{
+        --fs-heading: 5.6rem;
+    }
+    .page{
+        max-width: 117rem;
+        padding: 0 5rem;
+    }
 }
 
 img{
@@ -139,6 +150,6 @@ header h1{
 
 @keyframes downtop{
     100%{
-        
+         
     }
 }

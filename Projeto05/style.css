@@ -16,7 +16,7 @@
 
     font-size: 62.5%;
     --fs-body: 1.6rem;
-    --fs-heading: 4rem;
+    --fs-heading: clamp(4rem, 0.8rem + 3vw, 5.6rem);
 }
 
 body{
@@ -33,6 +33,24 @@ main{
     gap: 3.2rem;
     padding-bottom: 10rem;
     animation: downtop 700ms 350ms backwards;
+    grid-template-areas: "A B B"
+    "C C D";
+}
+
+main div:nth-child(1){
+    grid-area: A;
+}
+
+main div:nth-child(2){
+    grid-area: B;
+}
+
+main div:nth-child(3){
+    grid-area: C;
+}
+
+main div:nth-child(4){
+    grid-area: D;
 }
 
 .page{
@@ -41,9 +59,7 @@ main{
 }
 
 @media(min-width: 700px){
-    :root{
-        --fs-heading: 5.6rem;
-    }
+    
     .page{
         max-width: 117rem;
         padding: 0 5rem;
@@ -135,6 +151,8 @@ header h1{
     display: inline-flex;
     align-items: center;
 }
+
+
 
 @keyframe topdown {
     0%{

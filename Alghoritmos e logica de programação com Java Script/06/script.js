@@ -9,14 +9,10 @@ while(repete){
             lista.push(prompt('Informe oque deseja guardar na lista.'))
             break
         case 2:
-            if(lista.length === 0){
-                console.log('Não existem nenhum item cadastrado.')
+            if(lista.length == 0){
+                alert('Não existem nenhum item cadastrado.')
             }else{
-                console.log('Itens da lista:')
-            
-                for(let item of lista){
-                    console.log(`\n${item}`)
-                }
+                alert(lista)
             }
             break
         case 3:
@@ -25,6 +21,7 @@ while(repete){
             break
         default:
             console.log('Opção invalida')
+            break
     }
 }
 

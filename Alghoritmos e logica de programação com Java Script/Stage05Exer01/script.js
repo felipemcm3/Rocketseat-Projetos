@@ -1,5 +1,6 @@
 const screen1 = document.querySelector(".screen1")
 const screen2 = document.querySelector(".screen2")
+const errou = document.querySelector("#errou")
 let numeroSorteado = Math.round(Math.random() * 10)
 console.log(numeroSorteado)
 let tentativas = 1
@@ -18,6 +19,8 @@ function apertarbotao(event) {
 
         document.querySelector(".screen2 h2").innerText = 
         `Parabéns você acertou em ${tentativas} tentativa` 
+    }else{
+        errou.innerText = "Você errou tente novamente"
     }
     
 
@@ -35,4 +38,5 @@ btnReset.addEventListener('click', function(){
     tentativas = 1
     numeroSorteado = Math.round(Math.random() * 10)
     console.log(numeroSorteado)
+    errou.innerText = ""
 })

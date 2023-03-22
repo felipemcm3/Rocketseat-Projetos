@@ -102,10 +102,14 @@ main {
 }
 
 .frase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
     width: 293px;
     height: 107px;
     background-color: #E4EDF1;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: orientacao;
     
 }

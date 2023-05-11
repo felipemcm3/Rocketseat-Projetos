@@ -19,6 +19,8 @@ function apertarbotao(event) {
 
         document.querySelector(".screen2 h2").innerText = 
         `Parabéns você acertou em ${tentativas} tentativa` 
+    }else if(inputNumber.value == ""){
+        errou.innerText = "Informe algum valor"
     }else{
         errou.innerText = "Você errou tente novamente"
     }

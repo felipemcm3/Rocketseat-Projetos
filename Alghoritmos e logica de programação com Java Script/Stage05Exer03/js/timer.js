@@ -1,4 +1,9 @@
-function Timer(){
+export default function Timer({
+    minutesDisplay,
+    secondsDisplay,
+    timeTimerout,
+    resetControls
+}){ 
     function updateTimerDisplay(minutes, seconds) {
     minutesDisplay.textContent = String(minutes).padStart(2, "0")
     secondsDisplay.textContent = String(seconds).padStart(2, "0")
@@ -30,12 +35,13 @@ function Timer(){
     
     }
 
-    function resetTimer() {
+    function reset() {
     updateTimerDisplay(minutes, 0)
     clearTimeout(timeTimerout)
     }
 
     return {
-        countdown
+        countdown,
+        reset
     }
 }

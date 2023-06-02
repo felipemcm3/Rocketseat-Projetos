@@ -1,47 +1,62 @@
 export default function Timer({
     minutesDisplay,
     secondsDisplay,
-    timeTimerout,
-    resetControls
+    resetControls,
+    minutes
 }){ 
-    function updateTimerDisplay(minutes, seconds) {
-    minutesDisplay.textContent = String(minutes).padStart(2, "0")
-    secondsDisplay.textContent = String(seconds).padStart(2, "0")
+    
+    let timeTimerout
+
+    function updateDisplay(minutes, seconds) {
+        minutesDisplay.textContent = String(minutes).padStart(2, "0")
+        secondsDisplay.textContent = String(seconds).padStart(2, "0")
     }
 
     function countdown() {
-    timeTimerout = setTimeout(function() {
-        let seconds = Number(secondsDisplay.textContent)
-        let minutes = Number(minutesDisplay.textContent)
+        timeTimerout = setTimeout(function() {
+            let seconds = Number(secondsDisplay.textContent)
+            let minutes = Number(minutesDisplay.textContent)
 
-        
-        if(minutes <= 0 && seconds <= 0) {
-            resetControls()
-            return
-        }
-        
+            updateDisplay(minutes, 0)
 
-        if( seconds <= 0){
-            seconds = 10
-            --minutes
-        }
+            
+            if(minutes <= 0) {
+                resetControls()
+                return
+            }
+            
 
-        
-        updateTimerDisplay(minutes, String(seconds -1))
+            if( seconds <= 0){
+                seconds = 10
+                --minutes
+            }
+
+            
+            updateDisplay(minutes, String(seconds -1))
 
 
-        countdown()
-    }, 1000)
+            countdown()
+        }, 1000)
     
     }
 
     function reset() {
-    updateTimerDisplay(minutes, 0)
-    clearTimeout(timeTimerout)
+        updateDisplay(minutes, 0)
+        clearTimeout(timeTimerout)
+    }
+
+    function updateMinutes(newMinutes) {
+        minutes = newMinutes
+    }
+
+    function hold() {
+        clearTimeout(timeTimerout)
     }
 
     return {
         countdown,
-        reset
+        reset,
+        updateDisplay,
+        updateMinutes
     }
 }

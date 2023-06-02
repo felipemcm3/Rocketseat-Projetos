@@ -16,6 +16,7 @@ let minutes = Number(minutesDisplay.textContent)
 const controls = Controls({
     buttonPlay,
     buttonPause,
+    buttonPlay,
     buttonSet,
     buttonStop
 })
@@ -43,15 +44,16 @@ buttonStop.addEventListener('click', function() {
     timer.reset()
 })
 
+buttonSoundOff.addEventListener('click', function() {
+    buttonSoundOn.classList.remove('hide')
+    buttonSoundOff.classList.add('hide')
+})
+
 buttonSoundOn.addEventListener('click', function() {
     buttonSoundOn.classList.add('hide')
     buttonSoundOff.classList.remove('hide')
 })
 
-buttonSoundOff.addEventListener('click', function() {
-    buttonSoundOff.classList.add('hide')
-    buttonSoundOn.classList.remove('hide')
-})
 
 buttonSet.addEventListener('click', function() {
     let newMinutes = controls.getMinutes()
